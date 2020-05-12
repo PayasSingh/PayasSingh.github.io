@@ -1,0 +1,117 @@
+/* Master styles */
+body {
+	margin: 0px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+	display: grid;
+	/* grid-template-columns: 1fr 1fr; */
+}
+.page-view{
+	display: flex;
+	/* justify-content: space-between; */
+	font-size: 0.9em;
+}
+/* Right side of the page style */
+.content-side {
+	display: flex;
+  	flex-direction: column;
+	width: 100%;
+	padding-left: 100px;
+	background-color: lightgoldenrodyellow;
+}
+.content-wrapper {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding-right: 20px;
+}
+/* logo styles */
+.logo-wrapper{
+	display: flex;
+}
+.linkedin{
+	  transition: transform 1s;
+	  padding-right: 20px;
+}
+.linkedin:hover{
+	-ms-transform: scale(1.5); /* IE 9 */
+  	-webkit-transform: scale(1.5); /* Safari 3-8 */
+  	transform: scale(1.5); 
+}
+.github{
+	transition: transform 1s;
+	padding-right: 20px;
+}
+.github:hover{
+  	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+}
+/* navigation menu styles */
+.nav-wrapper {
+	display: flex;
+	padding: 15px;
+	margin-left: auto;
+	text-transform: uppercase;
+}
+.left-side {
+	display: flex;	
+	margin-top: 1px;
+}
+.nav-wrapper > .left-side > div {			/*get all divs in left-side under nav-wrappper*/
+	margin-right: 15px;
+	font-size: 0.9em;
+}
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;	
+}
+.nav-link-wrapper:hover {
+	border-bottom: 2px solid lightsalmon;
+}
+.nav-link-wrapper a:hover{
+	color: lightsalmon;
+}
+/* Portfolio Styles */
+.portfolio-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	padding-right: 20px;
+}
+.portfolio-item-wrapper{
+	position: relative;	
+}
+.portfolio-img-background {
+	height: 300px;
+	width: 325px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	filter: brightness(50%);
+}
+.img-text-wrapper {
+	position: absolute;
+	top: 0;
+	display: flex;
+	top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	color: #ebeae8;
+	font-weight: 500;
+	font-size: xx-large; 
+}
+.img-text-wrapper:hover{
+	color: lightsalmon;
+}
+.img-darken {
+	transition: 1s;
+	filter: brightness(20%);
+}

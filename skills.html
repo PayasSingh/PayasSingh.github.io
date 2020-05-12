@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coding</title>
+    <!-- 
+    	w3schools, How TO - Build a Website, https://www.w3schools.com/howto/howto_website.asp  
+    -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page-view">
+            <!-- Sidebar - left side of the page-->
+            <div class="sidebar">
+                <div class="sidebar-wrapper">
+                        <div class="portfolio-items-wrapper;">
+                            <div id="0" class="portfolio-item-wrapper" onclick="goToLink(0)">
+                                   <div class="portfolio-img-background" style="background-image: url(images/home.jpg)"></div>
+                                   <div class="img-text-wrapper">
+                                       <div class="text-wrapper">
+                                           HOME
+                                       </div>
+                                   </div>
+                            </div>
+                             <div id="1" class="portfolio-item-wrapper" onclick="goToLink(1)">
+                                    <div class="portfolio-img-background" style="background-image: url(images/coding.jpg)"></div>
+                                    <div class="img-text-wrapper"> 
+                                        <div class="text-wrapper">
+                                            SKILLS
+                                        </div>
+                                    </div>
+                             </div>
+                             <div id="2" class="portfolio-item-wrapper" onclick="goToLink(2)">
+                                    <div class="portfolio-img-background" style="background-image: url(images/work.jpg)"></div>
+                                    <div class="img-text-wrapper">
+                                        <div class="text-wrapper">
+                                            EXPERIENCE
+                                        </div>
+                                    </div>
+                             </div>
+                        </div>
+                </div>
+            </div>
+            <!-- right side of the page with the actual content-->
+            <div class="content-side">
+                <div class="nav-wrapper">
+                        <div class="left-side"> 
+                                <div class="nav-link-wrapper">
+                                        <a href="javascript:history.back()">Back</a>
+                                </div>        
+                        </div>
+                        <div class="right-side">
+                            <div class="name">
+                                    <div>Payas Singh</div>
+                            </div>   
+                        </div> 
+                </div>
+                <div class="content-wrapper">
+                        <h1>Welcome to my website !</h1>
+                        <p> You can contact me on:</p>
+                        <div class="logo-wrapper">
+                                <!-- <img src="images/instagram.png"/> -->
+                        </div>
+                </div> 
+            </div>
+        </div>    
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper")
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+    // create an array of links - Sidebar will lead to these 
+    var links = ["index.html", "skills.html", "experience.html"];
+    
+    function goToLink(position){
+        window.location.href=links[position];
+    }
+</script>
+</html>
