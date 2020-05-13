@@ -58,11 +58,29 @@
                         </div> 
                 </div>
                 <div class="content-wrapper">
-                        <h1>Welcome to my website !</h1>
-                        <p> You can contact me on:</p>
-                        <div class="logo-wrapper">
-                                <!-- <img src="images/instagram.png"/> -->
-                        </div>
+                    <h2>Skills: </h2>
+                    <li>Intermediate knowledge in Python, Java, HTML, CSS</li>
+                    <li>Working knowledge in C, MIPS, HTML, SQL, javascript</li>
+                    <li>Experience with Agile Practices and Android Development</li>        
+                    <br>
+                    <h2>Coding projects:</h2>
+                    <br>
+                    <div class="projects" onclick="goToLink(3)">
+                        <h3>OnMyWay</h3>
+                        <i>February - April 2020</i>
+                        <p> Followed Agile principles to build a ride sharing app using Android Studio in Java.
+                            Collaborated with a group of six people.</p>
+                        <span>Click Here</span>
+                    </div>
+                    <br>
+                    <div class="projects" onclick="goToLink(4)">
+                        <h3>Open Crime Data in Edmonton</h3>
+                        <i>February - May 2019</i>
+                        <p> Command-line interface to analyze and visualize 
+                            open data extracted from the City of Edmonton using Python and SQL. 
+                            Collaborated with a group of three people.</p>
+                        <span>Click Here</span>
+                    </div>
                 </div> 
             </div>
         </div>    
@@ -79,10 +97,25 @@
         })
     })
     // create an array of links - Sidebar will lead to these 
-    var links = ["index.html", "skills.html", "experience.html"];
+    var links = ["index.html", "skills.html", "experience.html", 
+    "https://github.com/CMPUT301W20T24-H03/OnMyWay", "https://github.com/PayasSingh/coding-projects"];
     
     function goToLink(position){
-        window.location.href=links[position];
+        if (position > 2){
+            window.open(links[position])
+        } else{
+            window.location.href=links[position];
+        }
     }
+    // show tooltip near mouse on hovering
+    var tooltipSpan =  document.querySelectorAll('.projects span')
+    window.onmousemove = function (e) {
+        var x = e.clientX,
+            y = e.clientY;
+        for (var i = 0; i <tooltipSpan.length; i++){
+            tooltipSpan[i].style.top = (y+ 20) + 'px';
+            tooltipSpan[i].style.left = (x+20) + 'px';
+        }
+    };
 </script>
 </html>
