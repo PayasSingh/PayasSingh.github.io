@@ -9,6 +9,7 @@ body {
 }
 .page-view{
 	display: flex;
+	background-color:lightgoldenrodyellow;
 	/* justify-content: space-between; */
 	font-size: 0.9em;
 }
@@ -29,7 +30,7 @@ body {
 }
 .projects {
 	/* position: relative; */
-	padding: 20px;
+	padding: 30px;
 	background: rosybrown;
 	text-align: justify;
 	transition: 1s;
@@ -85,16 +86,11 @@ body {
 }
 .nav-link-wrapper {
 	height: 22px;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom 0.5s;
 }
 .nav-link-wrapper a {
 	color: #8a8a8a;
 	text-decoration: none;
 	transition: color 0.5s;	
-}
-.nav-link-wrapper:hover {
-	border-bottom: 2px solid lightsalmon;
 }
 .nav-link-wrapper a:hover{
 	color: lightsalmon;
@@ -103,8 +99,8 @@ body {
 .portfolio-items-wrapper {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
 	padding-right: 20px;
+	background-color: lightgoldenrodyellow;
 }
 .portfolio-item-wrapper{
 	position: relative;	
