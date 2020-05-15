@@ -13,7 +13,7 @@ body {
 	/* justify-content: space-between; */
 	font-size: 0.9em;
 	color: #b1bbc4;
-	background-image: linear-gradient(black, rgb(129, 124, 124));
+	background-image: linear-gradient(to bottom, black,rgb(51, 48, 48) , rgb(153, 147, 147));
 }
 /* Right side of the page style */
 .content-side {
@@ -21,7 +21,8 @@ body {
   	flex-direction: column;
 	width: 100%;
 	padding-left: 60px; /* For browsers that do not support gradients */
-  	background-image: linear-gradient(black, rgb(129, 124, 124));
+	background-image: linear-gradient(to bottom, black,rgb(51, 48, 48) , rgb(153, 147, 147));
+  	/* background-image: linear-gradient(,black ,rgb(129, 124, 124)); */
 }
 .content-wrapper {
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -63,7 +64,10 @@ body {
 	color: #dadadae1;
 	font-size: xx-large;
 }
-/* logo styles */
+/* logo/contact styles */
+.contact-wrapper{
+	justify-content: center;
+}
 .logo-wrapper{
 	display: flex;
 	
@@ -71,7 +75,7 @@ body {
 .logo{
 	  transition: transform 1s;
 	  padding-right: 20px;
-	  filter: brightness(150%);
+	  filter: contrast(140%);
 }
 .logo:hover{
 	-ms-transform: scale(1.5); /* IE 9 */
