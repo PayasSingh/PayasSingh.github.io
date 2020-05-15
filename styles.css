@@ -1,7 +1,8 @@
 /* Master styles */
 body {
 	margin: 0px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Courier New', Courier, monospace;
+	line-height: 150%;
 }
 .container{
 	display: grid;
@@ -9,21 +10,22 @@ body {
 }
 .page-view{
 	display: flex;
-	background-color:lightgoldenrodyellow;
 	/* justify-content: space-between; */
 	font-size: 0.9em;
+	color: #b1bbc4;
+	background-image: linear-gradient(black, rgb(129, 124, 124));
 }
 /* Right side of the page style */
 .content-side {
 	display: flex;
   	flex-direction: column;
 	width: 100%;
-	padding-left: 60px;
-	background-color: lightgoldenrodyellow;
+	padding-left: 60px; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(black, rgb(129, 124, 124));
 }
 .content-wrapper {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-size: large;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: medium;
 	margin-bottom: 50%;
 	padding-right: 60px;
 
@@ -31,7 +33,8 @@ body {
 .projects {
 	/* position: relative; */
 	padding: 30px;
-	background: rosybrown;
+	background: rgb(143, 108, 108);
+	color: whitesmoke;
 	text-align: justify;
 	transition: 1s;
 	border-radius: 15px 50px 30px;
@@ -49,20 +52,26 @@ body {
 	color: aliceblue;
 	width: 70px;
 	text-align:center;
-	height:16px;
+	height:20px;
 	border-radius: 10px;
 	font-size: small;
     position: fixed;
     overflow:hidden;
 }
-
+.heading{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #dadadae1;
+	font-size: xx-large;
+}
 /* logo styles */
 .logo-wrapper{
 	display: flex;
+	
 }
 .logo{
 	  transition: transform 1s;
 	  padding-right: 20px;
+	  filter: brightness(150%);
 }
 .logo:hover{
 	-ms-transform: scale(1.5); /* IE 9 */
@@ -100,10 +109,11 @@ body {
 	display: grid;
 	grid-template-columns: 1fr;
 	padding-right: 20px;
-	background-color: lightgoldenrodyellow;
+	background-color: #1d1618;
 }
 .portfolio-item-wrapper{
 	position: relative;	
+
 }
 .portfolio-img-background {
 	height: 300px;
@@ -111,8 +121,10 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	image-resolution: unset;
 	margin-left: 0px;
 	filter: brightness(50%);
+	box-shadow: 1px 2px 10px rgba(0,0,0,.5);
 }
 .img-text-wrapper {
 	position: absolute;
