@@ -34,7 +34,7 @@ body {
 .projects {
 	/* position: relative; */
 	padding: 30px;
-	background: rgb(143, 108, 108);
+	background: rgba(140, 68, 114, 0.35);
 	color: whitesmoke;
 	text-align: justify;
 	transition: 1s;
@@ -44,7 +44,7 @@ body {
 	display: none;
 }
 .projects:hover{
-	background-color: lightseagreen;
+	background-color: #1f807a;
  }  
 
  .projects:hover span{
