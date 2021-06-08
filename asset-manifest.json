@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.22dcedde.chunk.css",
-    "main.js": "/static/js/main.996a4ac4.chunk.js",
-    "main.js.map": "/static/js/main.996a4ac4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.23f933ee.js",
-    "runtime-main.js.map": "/static/js/runtime-main.23f933ee.js.map",
-    "static/css/2.658248ec.chunk.css": "/static/css/2.658248ec.chunk.css",
-    "static/js/2.542d8910.chunk.js": "/static/js/2.542d8910.chunk.js",
-    "static/js/2.542d8910.chunk.js.map": "/static/js/2.542d8910.chunk.js.map",
-    "static/js/3.74308991.chunk.js": "/static/js/3.74308991.chunk.js",
-    "static/js/3.74308991.chunk.js.map": "/static/js/3.74308991.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.658248ec.chunk.css.map": "/static/css/2.658248ec.chunk.css.map",
-    "static/css/main.22dcedde.chunk.css.map": "/static/css/main.22dcedde.chunk.css.map",
-    "static/js/2.542d8910.chunk.js.LICENSE.txt": "/static/js/2.542d8910.chunk.js.LICENSE.txt"
+    "main.css": "//payassingh.github.io/PayasSingh.github.io/static/css/main.22dcedde.chunk.css",
+    "main.js": "//payassingh.github.io/PayasSingh.github.io/static/js/main.5be3ee5d.chunk.js",
+    "main.js.map": "//payassingh.github.io/PayasSingh.github.io/static/js/main.5be3ee5d.chunk.js.map",
+    "runtime-main.js": "//payassingh.github.io/PayasSingh.github.io/static/js/runtime-main.97066a14.js",
+    "runtime-main.js.map": "//payassingh.github.io/PayasSingh.github.io/static/js/runtime-main.97066a14.js.map",
+    "static/css/2.658248ec.chunk.css": "//payassingh.github.io/PayasSingh.github.io/static/css/2.658248ec.chunk.css",
+    "static/js/2.542d8910.chunk.js": "//payassingh.github.io/PayasSingh.github.io/static/js/2.542d8910.chunk.js",
+    "static/js/2.542d8910.chunk.js.map": "//payassingh.github.io/PayasSingh.github.io/static/js/2.542d8910.chunk.js.map",
+    "static/js/3.74308991.chunk.js": "//payassingh.github.io/PayasSingh.github.io/static/js/3.74308991.chunk.js",
+    "static/js/3.74308991.chunk.js.map": "//payassingh.github.io/PayasSingh.github.io/static/js/3.74308991.chunk.js.map",
+    "index.html": "//payassingh.github.io/PayasSingh.github.io/index.html",
+    "static/css/2.658248ec.chunk.css.map": "//payassingh.github.io/PayasSingh.github.io/static/css/2.658248ec.chunk.css.map",
+    "static/css/main.22dcedde.chunk.css.map": "//payassingh.github.io/PayasSingh.github.io/static/css/main.22dcedde.chunk.css.map",
+    "static/js/2.542d8910.chunk.js.LICENSE.txt": "//payassingh.github.io/PayasSingh.github.io/static/js/2.542d8910.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.23f933ee.js",
+    "static/js/runtime-main.97066a14.js",
     "static/css/2.658248ec.chunk.css",
     "static/js/2.542d8910.chunk.js",
     "static/css/main.22dcedde.chunk.css",
-    "static/js/main.996a4ac4.chunk.js"
+    "static/js/main.5be3ee5d.chunk.js"
   ]
 }
